@@ -1,0 +1,13 @@
+$primary-font: "Pixelify Sans", sans-serif;
+$secondary-font: "Playpen Sans", cursive;
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
