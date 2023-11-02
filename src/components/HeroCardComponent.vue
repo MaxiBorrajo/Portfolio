@@ -30,14 +30,19 @@ import { ref } from "vue";
 import yo3 from "../assets/yo3.png";
 import yo2 from "../assets/yo2.gif";
 import flecha from "../assets/flecha.png";
+import sound_shield from "../assets/sound_shield.mp3"
 
+const audio = new Audio(sound_shield)
 const src = ref(yo3);
 
 function activateAnimation() {
+  audio.currentTime = 0.4
+  audio.play()
   src.value = yo2;
 }
 
 function deactivateAnimation() {
+  audio.pause()
   src.value = yo3;
 }
 </script>
@@ -128,36 +133,6 @@ function deactivateAnimation() {
     }
   }
 }
-
-// @media only screen and (max-width: 780px) {
-//   .card {
-//     flex-grow: 1;
-//   &__left {
-//     width: 50%;
-//     &__title {
-//       font-size: 30px;
-//     }
-//     &__subtitle {
-//       font-size: 13px;
-//     }
-//   }
-
-//   &__right {
-//     width: 50%;
-//     &__text {
-//       top: 10px;
-//       left: 55px;
-//       transform: rotateZ(5deg);
-//     }
-//     &__icon {
-//       top: 10px;
-//       left: 20px;
-//       transform: rotateZ(60deg);
-//       width: 40px;
-//     }
-//   }
-// }
-// }
 
 @media only screen and (min-width: 601px) and (max-width: 780px) {
   .card {
