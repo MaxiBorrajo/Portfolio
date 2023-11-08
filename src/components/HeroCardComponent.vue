@@ -2,7 +2,7 @@
   <div class="card d-flex align-center justify-center">
     <div class="card__left d-flex justify-center flex-column">
       <p class="card__left__title">Maximiliano Borrajo</p>
-      <p class="card__left__subtitle">Full-stack developer, but more back than front </p>
+      <p class="card__left__subtitle">Full-stack developer, but more back than front &#129302</p>
       <ButtonComponent
         button-type="button"
         button-label="download cv"
